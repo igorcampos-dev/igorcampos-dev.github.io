@@ -1,176 +1,216 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meu Portfólio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
-<div id="mobile-menu-open" class="shadow-large">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-</div>
-<header>
-    <div id="mobile-menu-close">
-        <span>Fechar</span> <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
-    <div id="social-icons" class="social-icons">
-        <a href="https://www.linkedin.com/in/igor-de-campos-46a755265/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Igor-de-campos" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/igor_de_campos_" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:icampos.developer@yahoo.com"><i class="fas fa-envelope"></i></a>
-    </div>
-    <script>
-</script>
-    <ul id="menu" class="shadow">
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#experience">Experiência</a></li>
-        <li><a href="#education">Certificados</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-    </ul>
-</header>
-<div id="lead">
-    <div id="lead-content">
-        <h1>Igor de Campos</h1>
-        <h2>Desenvolvedor Java</h2>
-        <a href="./images/curriculo/Curriculo%204.1.pdf" download="Igor-de-campos-curriculo" class="btn-rounded-white">Baixar Currículo</a>
-    </div>
-    <div id="lead-overlay"></div>
-    <div id="lead-down">
-        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-    </div>
-</div>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2 class="heading">Sobre Mim</h2>
-            </div>
-            <div class="col-md-8">
-                <p>
-                    Meu nome é Igor de Campos, tenho 17 anos e sou um desenvolvedor Java na empresa LoopIT. Além de minha paixão pela programação Java, também estou imerso em outros domínios tecnológicos. No âmbito do desenvolvimento front-end, tenho conhecimento em JavaScript, TypeScript e React, o que me permite abordar projetos de forma mais abrangente.
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Igor de campos - Desenvolvedor backend</title>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="assets/css/styles_two.css">
+        <script src ="https://cdn.jsdelivr.net/npm/typelighterjs/typelighter.min.js"></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i> Inicio</a>
+                        </li>
+                        <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i> Sobre mim</a>
+                        </li>
+                        <li class="nav__item"><a href="#qualification" class="nav__link"><i class="uil uil-book-alt nav__icon"></i> Experiências</a>
+                        </li>
+                        <li class="nav__item"><a href="#certifications" class="nav__link"><i class="uil uil-file-alt nav__icon"></i> Certificados</a>
+                        </li>
+                        <li class="nav__item"><a href="#projects" class="nav__link"><i class="uil uil-desktop-alt nav__icon"></i> Projetos</a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/igor-de-campos/" target="_blank" class="home__social-icon" style="margin-right: 10px;"><i class="uil uil-linkedin-alt" style="font-size: 24px;"></i></a>
+                            <a href="https://www.linkedin.com/in/igor-de-campos/" target="_blank" class="home__social-icon"><i class="uil uil-github-alt" style="font-size: 24px;"></i></a>
+                            <a href="https://www.instagram.com/igor_de_campos_/" target="_blank" class="home__social-icon"><i class="uil uil-instagram" style="font-size: 24px;"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5551995371947" target="_blank" class="home__social-icon"><i class="uil uil-whatsapp" style="font-size: 24px;"></i></a>
+                        </div>
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" >
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path
+                                        d="M190.312 36.4879C206.582 62.1187 201.309 41.0228 161.023 21.7403
+                                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    <image class="home__blob-img" x="-5" y="5" href="assets/img/general/perfil.png" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title">Olá, <span class="home__colored-text">prazer</span> igor!<span class="home__colored-text"></span></h1>
+                            <h2 class="home__subtitle"><span class="typeWriter" data-text='["Eu sou programador", "programo em Java!"]' data-speed=2></span></h2>
+                        </div>
+                    </div>
 
-                    No entanto, minha jornada tecnológica não se limita ao meu trabalho na LoopIT. Tenho dedicado tempo para meu aprimoramento pessoal, especialmente em assuntos como containerização com Docker e as práticas essenciais de DevOps.
-
-                    Além disso, busquei proficiência em várias tecnologias e frameworks que enriquecem meu repertório, que inclui Spring Boot, Spring Security, Servlets, Hibernate e JPA. Estou comprometido em me tornar um programador Java experiente e continuar a expandir meu conhecimento no campo da tecnologia.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="skills">
-    <h2 class="heading">Habilidades</h2>
-    <ul>
-        <li>Java</li>
-        <li>Spring boot/security</li>
-        <li>Javascript (básico)</li>
-        <li>React (básico)</li>
-    </ul>
-</div>
-<div>
-</div>
-<div id="experience" class="background-alt">
-    <h2 class="heading">Experiência</h2>
-    <div id="experience-timeline">
-        <div data-date="Setembro de 2023 – Atualmente">
-            <h3>Igor de Campos</h3>
-            <h4>Estágio de programador java</h4>
-            <p>
-                No meu estágio, estou trabalhando como programador Java e assumindo diversas demandas atribuídas a mim. Isso inclui o desenvolvimento de sistemas e a resolução de tarefas desafiadoras.
-            </p>
-        </div>
-    </div>
-</div>
-<div id="education">
-    <h2 class="heading">Certificados</h2>
-    <div class="education-block">
-        <h3>Java completo 2022 - <a href="https://www.udemy.com/certificate/UC-e5514456-7ca1-47ff-987a-1fa69e785ad2/">veja aqui</a></h3>
-        <span class="education-date">Outubro de 2022 - maio de 2023</span>
-        <h4></h4>
-        <p>
-            Minha primeira dedicação, neste meu primeiro curso eu aprendi a base e os grandes pilares do Java, desde orientação a objetos, operadores unários e ternários, aos frameworks poderosos como o Spring Boot e os bancos de dados relacionais e não relacionais, como o MySQL e o MongoDB.
-        </p>
-    </div>
-    <div class="education-block">
-        <h3>Java full Spring Boot: - <a href="https://www.udemy.com/certificate/UC-22df312e-43ee-4f57-a9b2-20951189c33e/">veja aqui</a></h3>
-        <span class="education-date">Abril de 2023 - Junho de 2023</span>
-        <h4></h4>
-        <p>
-            Durante este curso, explorei a essência do Spring Boot no cenário tecnológico atual. Adquiri conhecimentos fundamentais, incluindo a implementação de métodos HTTP como POST, PUT, GET e DELETE. Aprofundei-me na conexão com bancos de dados, tanto relacionais quanto não relacionais, compreendendo a arquitetura e a estrutura de código. Organizei meu projeto de forma eficiente, criando diretórios bem estruturados para diferentes componentes. Isso envolveu a criação de pastas dedicadas às interfaces Java para a interação com bancos de dados, além de classes controladoras e classes da camada de serviços. Além disso, explorei os conceitos de implementações (impl) e Objetos de Transferência de Dados (DTOs), enriquecendo ainda mais meu entendimento no desenvolvimento com Spring Boot.
-        </p>
-    </div>
-</div>
-<div id="projects" class="background-alt">
-    <h2 class="heading">Projetos</h2>
-    <div class="container">
-        <div class="row">
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/flower.jpg" />
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <h3>serviço web de enviar flores/email virtual</h3>
-                    <p>
-                        Desenvolvo com um amigo um serviço, tendo como ferramenta principal a biblioteca JavaMail.
-                        Nosso objetivo é enviar e-mails a partir de um domínio, mas que inicialmente será feito localmente,
-                        usando tecnologias como: Spring Security, Spring Boot, Thymeleaf, etc. Além disso, planejamos
-                        incorporar ferramentas mais robustas no projeto no futuro.
-                    </p>
-                    <p>
-                        Atualmente, estou testando e explorando o uso do Docker para trazer uma abordagem em que o frontend
-                        e o backend são separados e executados em containers Docker distintos, fora a abordagem nova do spring security.
-                    </p>
-                    <a href="https://github.com/Igor-de-campos/Floriculture">Ver Projeto</a>
+            </section>
+            <section class="about section" id="about">
+                <h2 class="section__title">Sobre Mim</h2>
+                <span class="section__subtitle">Introdução Rápida</span>
+                <div class="about__container container grid">
+                    <img src="assets/img/general/illustration.png" alt="Imagem de fundo da seção Sobre" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">
+                            Meu nome é Igor de Campos, tenho 17 anos e sou um desenvolvedor Java na empresa LoopIT.
+                            Além de minha paixão pela programação Java, também tenho conhecimento em JavaScript, TypeScript e React.
+                            Tenho dedicado tempo para meu aprimoramento pessoal em Docker e DevOps.
+                            Busquei proficiência em tecnologias como Spring Boot, Spring Security, Hibernate e JPA.
+                            Estou comprometido em me tornar um programador Java experiente e continuar expandindo meu conhecimento tecnológico.
+                        </p>
+                        <div class="about__buttons">
+                            <a download="" class="button button--flex" href="/assets/img/pdf/Igor-de-campos-curriculo.pdf">Meu currículo<i class="uil uil-download-alt button__icon"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/ecomerce.jpg" />
+            </section>
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualificações</h2>
+                <span class="section__subtitle">Meu desenvolvimento</span>
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target='#education'><i class="uil uil-graduation-cap qualification__icon"></i>Educação</div>
+                        <div class="qualification__button button--flex" data-target="#work"><i class="uil uil-briefcase-alt qualification__icon"></i>Trabalho</div>
+                    </div>
+                    <div class="qualification__sections">
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title"><a>Ensino Médio</a></h3>
+                                    <span class="qualification__subtitle">Rio grande do sul - Gomes jardim escola</span>
+                                    <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2020 - 2023</div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <div class="qualification__line"></div>
+                                </div>
+                            </div>
+                            <div class="qualification__data">
+                                <div></div>
+                                <div><span class="qualification__rounder"></span><div class="qualification__line"></div></div>
+                                <div><h3 class="qualification__title"><a>Inicio do curso Java completo</a></h3><span class="qualification__subtitle">Udemy</span><div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2022 - 2023</div></div>
+                            </div><div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title"><a>Inicio do Curso Java full Spring boot</a></h3>
+                                    <span class="qualification__subtitle">Udemy</span>
+                                    <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2023 - 2023</div>
+                                </div>
+                                <div><span class="qualification__rounder"></span><div class="qualification__line"></div></div>
+                            </div>
+                        </div>
+                        <div class="qualification__content" data-content id="work">
+                            <div class="qualification__data">
+                                <div><h3 class="qualification__title"><a>Estagiário Desenvolvedor Java</a></h3>
+                                    <span class="qualification__subtitle">HomeOffice</span>
+                                    <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>09/2023 - atualmente</div>
+                                </div>
+                                <div><span class="qualification__rounder"></span><div class="qualification__line"></div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <h3>Desenvolvimento de um e-commerce</h3>
-                    <p>
-                        Atualmente, estou imerso em um projeto de e-commerce em sua fase inicial, que está em constante evolução.
-                        Neste projeto, faço uso de Servlets em Java, juntamente com bibliotecas como Gson, Hibernate e Spring Security no backend.
-                    </p>
-                    <p>
-                        Uma característica essencial é a estrita separação entre o backend e o frontend, com comunicação através de requisições.
-                        No frontend, estou trabalhando com React e Fetch, enquanto o MySQL é a escolha para o gerenciamento do banco de dados.
-                    </p>
-                    <a href="https://github.com/Igor-de-campos/E-commerce">Ver Projeto</a>
+            </section>
+            <section class="certification section" id="certifications">
+                <h2 class="section__title">Certificações</h2>
+                <span class="section__subtitle">Cursos que dediquei-me</span>
+                <div class="certification__container container grid">
+                    <div class="certification__content">
+                        <div><img src="assets/img/certifications/udemy.png" class="certification__img"><h4 class="certification__title">Java completo 2022</h4><h4 class="certification__subtitle">Outubro de 2022 - maio de 2023</h4></div>
+                        <a class="button button--flex button--small button--link certification__button"
+                            href="https://www.udemy.com/certificate/UC-e5514456-7ca1-47ff-987a-1fa69e785ad2/" target="_blank">Ver certificado
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                    <div class="certification__content">
+                        <div>
+                            <img src="assets/img/certifications/udemy.png" class="certification__img">
+                            <h4 class="certification__title">Java full Spring Boot</h4>
+                            <h4 class="certification__subtitle">Abril de 2023 - Junho de 2023</h4>
+                        </div>
+                        <a class="button button--flex button--small button--link certification__button"
+                            href="https://www.udemy.com/certificate/UC-22df312e-43ee-4f57-a9b2-20951189c33e/"
+                            target="_blank">
+                            Ver certificado
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-            </div>
-            <div class="col-sm-5 social">
-                <ul>
-                    <li><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
-                    <li><a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/scripts.min.js"></script>
-</body>
+            </section>
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Projetos</h2>
+                <span class="section__subtitle">Meu trabalho recente</span>
+                <div class="projects__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="projects__content grid swiper-slide">
+                            <img src="assets/img/projects/R.png" alt="PaperWhiz project's image"
+                                class="projects__img">
+                            <div class="projects__data">
+                                <h3 class="projects__title">Serviço Web de Envio de Flores/Email Virtual</h3>
+                                <p class="projects__description">
+                                    Desenvolvendo um serviço com foco no envio de e-mails virtuais, utilizando JavaMail como biblioteca principal.
+                                    A tecnologia inclui Spring Security, Spring Boot e Thymeleaf, inicialmente em ambiente local. Planejamos futuras expansões.
+                                    Atualmente, estamos explorando o uso de Docker para separar frontend e backend em contêineres distintos.
+                                </p>
+                                <a href="https://github.com/Igor-de-campos/Floriculture" target="_blank"
+                                   class="button button--flex button--small projects__button">
+                                    Repositório GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projects__content grid swiper-slide">
+                            <img src="assets/img/projects/OIP.png" alt="Movie sentiment analysis project's image"
+                                class="projects__img">
+                            <div class="projects__data">
+                                <h3 class="projects__title">Desenvolvimento de um e-commerce</h3>
+                                <p class="projects__description">
+                                    Atualmente, estou trabalhando em um projeto de e-commerce, usando Servlets em Java, Gson, Hibernate e Spring Security no backend.
+                                    No frontend, estou utilizando React e Fetch, com o MySQL como banco de dados.
+                                </p>
+                                <a href="https://github.com/Igor-de-campos/E-commerce" target="_blank"
+                                   class="button button--flex button--small projects__button">
+                                    Repositório GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper-projects-icon"></i></div>
+                    <div class="swiper-button-prev"><i class="uil uil-angle-left-b swiper-projects-icon"></i></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"><div class="footer__bg"><div class="footer__container container grid"><div></div></div></div></footer>
+        <a href="#home" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
+        <script src="assets/js/mains_two.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
