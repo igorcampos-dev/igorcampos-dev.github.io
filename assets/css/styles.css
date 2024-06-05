@@ -45,28 +45,35 @@
 ::after {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
+
 h1,
 h2,
+
 p {
   margin: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -83,6 +90,7 @@ img {
   margin-bottom: var(--mb-4);
   text-align: center;
 }
+
 .section-title::after {
   position: absolute;
   content: "";
@@ -94,6 +102,7 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
+
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -561,6 +570,7 @@ img.man-icons {
     right: 5%;
 
   }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -575,6 +585,7 @@ img.man-icons {
   .animate-charcter{
     font-size: 24px;
   }
+
 }
 
 .mylogo{
@@ -611,9 +622,11 @@ img.man-icons {
 }
 
 @keyframes textclip {
+
   to {
     background-position: 200% center;
   }
+
 }
 
 .Baloo {
@@ -659,6 +672,7 @@ img.man-icons {
   100% {
     text-shadow: -4px 3px 0px #00ffd8;
   }
+  
 }
 
 @-webkit-keyframes change-color {
