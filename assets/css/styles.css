@@ -305,6 +305,18 @@ section.about {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }
 
+.certificates-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: 0.5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+}
+
 .skills-icon {
   width: 2rem;
   font-size: 2rem;
@@ -319,6 +331,11 @@ img.man-icons {
 }
 
 .skills-names {
+  display: flex;
+  align-items: center;
+}
+
+certificates-names {
   display: flex;
   align-items: center;
 }
