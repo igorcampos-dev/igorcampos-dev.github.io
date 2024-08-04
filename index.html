@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Igor de campos" width="80" style="border: 2px solid black; border-radius: 30px;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Igor de campos</h1>
+
+          <p class="title">Desenvolvedor Backend</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:igorccampos8@gmail.com" class="contact-link">igorccampos8@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Telefone</p>
+
+              <a href="tel:+5551995371947" class="contact-link">+55 (51) 9 9537-1947</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Aniversário</p>
+
+              <time datetime="2005-10-27">27 de outubro, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localização</p>
+
+              <address>Canoas, Rio grande do sul, Brasil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=100035939770487" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/igorcampos-dev" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/igorcdev" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Sobre mim</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resumo</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contato</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #Sobre mim
+      -->
+
+      <article class="sobre mim  active" data-page="sobre mim">
+
+        <header>
+          <h2 class="h2 article-title">Sobre mim</h2>
+        </header>
+
+        <section class="about-text">
+          <p>Sou um desenvolvedor backend dedicado à produção de código de alta qualidade e à resolução de desafios complexos em equipe.</p>
+          <p>Atualmente, atuo como Desenvolvedor Backend em uma consultoria, onde trabalho com Java (usando Spring Boot) e Python (integrando com serviços da AWS).</p>
+          <p>Tenho experiência na implementação de arquiteturas escaláveis e na interação com diversos bancos de dados, como Oracle, MySQL, MongoDB e SQL Server. Meu compromisso é entregar soluções personalizadas, melhorar continuamente o código e contribuir para projetos de forma eficiente. Sempre atento aos prazos e focado na satisfação dos clientes, busco constantemente estudar e melhorar minhas habilidades.</p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">O que eu faço</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Integrações</h4>
+
+                <p class="service-item-text">
+                 Integrações de projetos com serviços de nuvem de diversas plataformas, como Google Cloud Platform, Azure ou AWS.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desenvolvimento web</h4>
+
+                <p class="service-item-text">
+                 Desenvolvimento do Backend de sistemas e softwares web.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Manutenção</h4>
+
+                <p class="service-item-text">
+                  Manutenção de projetos já existentes, atualizações e implementação de novas features.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container><div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+          </section>
+        </div>
+
+      </article>
+
+
+      <!--
+        - #RESUMO
+      -->
+
+      <article class="resumo" data-page="resumo">
+
+        <header>
+          <h2 class="h2 article-title">Resumo</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educação</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Estudos do curso `Java COMPLETO: Do Zero ao Profissional + Projetos!`</h4>
+
+              <span> Jan 2022 — Abr 2023</span>
+
+              <p class="timeline-text">
+                Primeiro curso estudado e absorvido na área de tecnologia, com ele, aprendi os conceitos básicos na área de programação e conceitos importantes
+                da linguagem Java, foi importante e serviu-me como base.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Estudos do curso `Java Spring Boot: Começando a trabalhar em uma empresa`</h4>
+
+              <span>Abr 2023 — Jun 2023</span>
+
+              <p class="timeline-text">
+                Com esse curso, já com uma base sólida, consegui me aprofundar nos estudos e na proposta de desenvolvimento de aplicações
+                Java com o seu framework nomeado de "Spring", entendendo sobre conexões com serviços externos (como Bancos de dados), e outras
+                funcionalidades que o mesmo nos proporciona.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Faculdade de análise e desenvolvimento de sistemas</h4>
+
+              <span>2024 — agora</span>
+
+              <p class="timeline-text">
+                Meu foco atualmente, focando em aprender conhecimentos mais aprofundados da área de TI.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiência</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Engenheiro analista de software</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Atualmente, trabalho na criação e manutenção de sistemas usando Java, Spring e JUnit no back-end.
+                Construo aplicativos web com Spring e testo classes de modelo e serviço com JUnit. Tenho experiência com AWS e Docker, além de Python e JavaScript para funções Lambda.
+                Utilizo REST, Arquitetura Hexagonal e MVC para comunicação entre serviços, e bancos de dados como MySQL, MongoDB, PostgreSQL e Azure SQL Database. Minhas atividades incluem desenvolver novos recursos, manter e dar suporte a aplicações existentes,
+                colaborar com outras equipes para integração de sistemas,realizar migrações para a nuvem e testes de estresse e escalabilidade para garantir o desempenho dos serviços.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Minhas skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="25">25%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Nodejs</h5>
+                <data value="25">25%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <div class="filter-select-box">
+            <button class="filter-select" data-select></button>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active">
+              <a href="https://github.com/igorcampos-dev/portfolio-payroll-manager-worker-service-v1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1_.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Backend - Gerenciador de eventos</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/igorcampos-dev/portfolio-payroll-manager-worker-service-v1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2_.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Backend - Gerenciador de contraCheques</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/igorcampos-dev/portfolio-user-registration-email-service-v1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4_.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Backend - Cadastro e envio de email automático para usuário</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/igorcampos-dev/nexus.java.lib.aws">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3_.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Biblioteca que integra operações com o S3 da AWS</h3>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTATO
+      -->
+
+      <article class="contato" data-page="contato">
+
+        <header>
+          <h2 class="h2 article-title">Contato</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.944477944209!2d-51.18384898455695!3d-29.91782823194366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197ae5f183d36b%3A0x6d0c3b6a7b2f1235!2sCanoas%2C%20RS%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1691084119441!5m2!1spt-BR!2sbr"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="mailto:igorccampos8@gmail.com" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
